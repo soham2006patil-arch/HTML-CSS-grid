@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.container {
+    background-color: #a84242;
+    padding: 10px;
+}
+
+/* Fallback layout (normal) */
+.box {
+    background-color: rgb(139, 185, 201);
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Grid only if supported */
+@supports (display: grid) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .box {
+        margin-bottom: 0;
+    }
+}
