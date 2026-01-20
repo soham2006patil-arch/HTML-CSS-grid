@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: orchid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background-color: lightblue;
+    border: 10px double black;
+    padding: 20px;
+}
